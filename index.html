@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fernando Ítalo — Editor de Vídeo & Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="keywords"
+    content="ferando, italo, editor, designer, edição, vídeos, videos,editor de vídeo, edição de vídeo, motion design, reels, vídeos para empresas">
+  <meta name="language" content="pt-BR">
+  <meta name="application-name" content="Fernando Ítalo">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description"
+    content="Editor de vídeo com mais de 4 anos de experiência na criação de vídeos para empresas, marcas e campanhas publicitárias. Especialista em Reels, YouTube e anúncios.">
+
+  <meta property="og:title" content="Fernando Ítalo Editor de Vídeo e Designer">
+  <meta property="og:description" content="Vídeos profissionais para empresas, marcas e criadores de conteúdo.">
+
+  <!-- <meta property="og:image" content="https://site.com/imagem.jpg">
+  <meta property="og:url" content="https://site.com"> -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Fernando Ítalo">
+</head>
+
+<body>
+
+  <div class="scrubber" aria-hidden="true">
+    <div class="mark" data-target="hero"><span>INÍCIO</span></div>
+    <div class="mark" data-target="sobre"><span>SOBRE</span></div>
+    <div class="mark" data-target="servicos"><span>SERVIÇOS</span></div>
+    <div class="mark" data-target="contato"><span>CONTATO</span></div>
+    <div class="track">
+      <div class="playhead" id="playhead"></div>
+    </div>
+  </div>
+
+  <header class="nav">
+    <span class="mark-name">F.ITALO_ED</span>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <span class="rec"><span class="dot"></span>GRAVANDO — PORTFÓLIO</span>
+    <h1>Fernando
+      Ítalo
+      <span class="thin">Edição de vídeo & design.</span>
+    </h1>
+    <div class="timecode">
+      <span>00:00:00:00</span>
+      <div class="bar"></div>
+    </div>
+    <!-- <span class="scroll-cue">SCROLL ↓</span> -->
+  </section>
+
+  <section id="sobre">
+    <div class="section-head">
+      <h2>Sobre</h2>
+      <span class="num">01 / 03</span>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p>Sou editor de vídeo e estou a mais de 4 anos transformando ideias em conteúdos que prendem a atenção e geram
+          resultados. Tenho experiência na criação de vídeos para marcas, empresas e campanhas publicitárias, unindo
+          criatividade, estratégia e edição dinâmica para entregar produções de alto nível.</p>
+      </div>
+      <div class="skills-list">
+        <div class="row"><span>Edição</span><span>Premiere · DaVinci</span></div>
+        <div class="row"><span>Motion</span><span>After Effects</span></div>
+        <div class="row"><span>Design</span><span>Photoshop · Illustrator</span></div>
+        <div class="row"><span>Color</span><span>DaVinci Resolve</span></div>
+        <div class="row"><span>Formatos</span><span>Reels · YouTube · Institucional</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <div class="section-head">
+      <h2>Serviços</h2>
+      <span class="num">02 / 03</span>
+    </div>
+
+    <div class="filters" id="filters">
+      <button class="active" data-filter="all">Todos</button>
+      <button data-filter="comida">Comida</button>
+      <button data-filter="saude">Saúde</button>
+      <button data-filter="moda">Moda</button>
+      <button data-filter="corporativo">Corporativo</button>
+	  <button data-filter="imobiliaria">Imobiliária</button>
+    </div>
+    <div class="grid" id="grid">
+      <div class="card" data-cat="comida">
+        <div class="frame">
+          <video controls width="250">
+            <source src="assets/video_praca.webm" type="video/webm" />
+          </video>
+        </div>
+        <div class="meta"><span class="title">Praça Siqueira Campos</span><span class="cat">Comida</span></div>
+      </div>
+
+      <div class="card" data-cat="imobiliaria">
+        <div class="frame">
+          <video controls width="250">
+            <source src="assets/VÍDEO_CANOPUS_BARRETO_IMÓVEIS.webm" type="video/webm" />
+          </video>
+        </div>
+        <div class="meta"><span class="title">Apartamentos Canopus</span><span class="cat">Imobiliária</span></div>
+      </div>
+	  
+	  <div class="card" data-cat="comida">
+        <div class="frame">
+          <video controls width="250">
+            <source src="assets/VÍDEO_DONACÊ_STONE_COLLAB.webm" type="video/webm" />
+          </video>
+        </div>
+        <div class="meta"><span class="title">DonaCê Açaíteria</span><span class="cat">Comida</span></div>
+      </div>
+	  
+	  <div class="card" data-cat="moda">
+        <div class="frame">
+          <video controls width="250">
+            <source src="assets/VÍDEO_LOJA_DE_ROUPAS_STONE COLAB.webm" type="video/webm" />
+          </video>
+        </div>
+        <div class="meta"><span class="title">Flávia Boáh Moda Feminina</span><span class="cat">moda</span></div>
+      </div>
+	  
+	  <div class="card" data-cat="corporativo">
+        <div class="frame">
+          <video controls width="250">
+            <source src="assets/VÍDEO_STONE_EXPOCRATO_1.webm" type="video/webm" />
+          </video>
+        </div>
+        <div class="meta"><span class="title">Stone na Expocrato</span><span class="cat">corporativo</span></div>
+      </div>
+	  
+	  <div class="card" data-cat="comida">
+        <div class="frame">
+          <video controls width="250">
+            <source src="assets/VÍDEO_PREDILETTO_STONE.webm" type="video/webm" />
+          </video>
+        </div>
+        <div class="meta"><span class="title">Cafeteria Prediletto</span><span class="cat">comida</span></div>
+      </div>
+	  
+	  <div class="card" data-cat="comida">
+        <div class="frame">
+          <video controls width="250">
+            <source src="assets/VÍDEO_AMANCIOS_COLAB_STONE.webm" type="video/webm" />
+          </video>
+        </div>
+        <div class="meta"><span class="title">Restaurante Amâncius</span><span class="cat">comida</span></div>
+      </div>
+	  
+	  <div class="card" data-cat="saude">
+        <div class="frame">
+          <video controls width="250">
+            <source src="assets/VÍDEO_PRÓTESE_PROTOCOLO.webm" type="video/webm" />
+          </video>
+        </div>
+        <div class="meta"><span class="title">Dr. Rafael Marcolino - Prótese</span><span class="cat">saude</span></div>
+      </div>
+	  
+	  <div class="card" data-cat="comida">
+        <div class="frame">
+          <video controls width="250">
+            <source src="assets/DOÇURAS_DA_MARI_STONE_CRATO.webm" type="video/webm" />
+          </video>
+        </div>
+        <div class="meta"><span class="title">Doçuras da Mari</span><span class="cat">comida</span></div>
+      </div>
+	  
+	  <div class="card" data-cat="corporativo">
+        <div class="frame">
+          <video controls width="250">
+            <source src="assets/VÍDEO_POSTO_JUAÇO_STONE_CARIRI.webm" type="video/webm" />
+          </video>
+        </div>
+        <div class="meta"><span class="title">Posto Juaço Petróleo</span><span class="cat">corporativo</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="section-head">
+      <h2>Contato</h2>
+      <span class="num">03 / 03</span>
+    </div>
+    <div class="contact-wrap">
+      <h2>Vamos produzir o próximo corte?</h2>
+      <div class="contact-links">
+        <a href="mailto:fernandohorizonte16@gmail.com">fernandohorizonte16@gmail.com</a>
+        <a href="https://wa.me/5588996408363" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/fernando.mkv" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 FERNANDO ÍTALO</span>
+  </footer>
+
+  <script>
+    // filter logic
+    const buttons = document.querySelectorAll('#filters button');
+    const cards = document.querySelectorAll('.card');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        cards.forEach(c => {
+          c.classList.toggle('hidden', f !== 'all' && c.dataset.cat !== f);
+        });
+      });
+    });
+
+    // scrubber sync
+    const marks = document.querySelectorAll('.scrubber .mark');
+    const playhead = document.getElementById('playhead');
+    const track = document.querySelector('.scrubber .track');
+    const sections = Array.from(marks).map(m => document.getElementById(m.dataset.target));
+
+    function updateScrubber() {
+      const trackHeight = track.offsetHeight;
+      const scrollTop = window.scrollY;
+      const docHeight = document.body.scrollHeight - window.innerHeight;
+      const progress = Math.min(Math.max(scrollTop / docHeight, 0), 1);
+      playhead.style.top = (progress * trackHeight) + 'px';
+
+      let activeIndex = 0;
+      sections.forEach((sec, i) => {
+        if (sec && sec.getBoundingClientRect().top < window.innerHeight * 0.5) activeIndex = i;
+      });
+      marks.forEach((m, i) => m.classList.toggle('active', i === activeIndex));
+    }
+    window.addEventListener('scroll', updateScrubber, { passive: true });
+    window.addEventListener('resize', updateScrubber);
+    updateScrubber();
+
+    // smooth scroll for scrubber marks
+    marks.forEach(m => {
+      m.style.cursor = 'pointer';
+      m.addEventListener('click', () => {
+        document.getElementById(m.dataset.target).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
